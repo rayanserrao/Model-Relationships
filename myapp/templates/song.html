@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song details</title>
+</head>
+<body>
+    <table>
+        <th>song name</th>
+        <th>song_dur</th>
+        <th>created by</th>
+        {% for dt1 in data1 %}
+ 
+        <tr>
+            <td>{{dt1.song_name}}</td>
+            <td>{{dt1.song_dur}}</td>
+            <td>{{dt1.written_by}}</td>
+ 
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3>via song dur</h3>
+        <th>song name</th>
+        <th>song_dur</th>
+        <th>created by</th>
+        {% for dt1 in data2 %}
+ 
+        <tr>
+            <td>{{dt1.song_name}}</td>
+            <td>{{dt1.song_dur}}</td>
+            <td>{{dt1.written_by}}</td>
+ 
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3> bia username</h3>
+        <th>song name</th>
+        <th>song_dur</th>
+        <th>created by</th>
+        {% for dt1 in data3 %}
+ 
+        <tr>
+            <td>{{dt1.song_name}}</td>
+            <td>{{dt1.song_dur}}</td>
+            <td>{{dt1.written_by}}</td>
+ 
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

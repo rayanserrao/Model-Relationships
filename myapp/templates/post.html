@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post details</title>
+</head>
+<body>
+    <table>
+        <th>Post title</th>
+        <th>page_cat</th>
+        <th>post ubliosh date</th>
+        <th>created by</th>
+        {% for dt1 in data1 %}
+ 
+        <tr>
+            <td>{{dt1.post_title}}</td>
+            <td>{{dt1.post_cat}}</td>
+            <td>{{dt1.pots_publish_date}}</td>
+            <td>{{dt1.user}}</td>
+ 
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+<h2>via post cat</h2>
+        <th>Post title</th>
+        <th>page_cat</th>
+        <th>post ubliosh date</th>
+        <th>created by</th>
+        {% for dt1 in data2 %}
+ 
+        <tr>
+            <td>{{dt1.post_title}}</td>
+            <td>{{dt1.post_cat}}</td>
+            <td>{{dt1.pots_publish_date}}</td>
+            <td>{{dt1.user}}</td>
+ 
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3> viua user email</h3>
+        <th>Post title</th>
+        <th>page_cat</th>
+        <th>post ubliosh date</th>
+        <th>created by</th>
+        {% for dt1 in data3 %}
+ 
+        <tr>
+            <td>{{dt1.post_title}}</td>
+            <td>{{dt1.post_cat}}</td>
+            <td>{{dt1.pots_publish_date}}</td>
+            <td>{{dt1.user}}</td>
+ 
+        </tr>
+        {% endfor %}
+    </table
+
+    
+</body>
+</html>
